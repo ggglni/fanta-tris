@@ -7,6 +7,7 @@
     <link href="style.css" rel='stylesheet'>
     <link href="overlay.css" rel='stylesheet'>
     <link href="configuration.css" rel='stylesheet'>
+    <link href="game.css" rel='stylesheet'>
     <script src='game.js'></script>
     <title>Fantatris</title>
 </head>
@@ -34,35 +35,35 @@
         <section id="tabellone">
             <div id="giocatore">
                 <p>Giocatore 1</p>
-                <p id="nome-giocatore">Manuel Pucciarelli</p>
-                <p id="score"></p>
-                <p>Edit</p>
+                <h2>Manuel Pucciarelli</h2>
+                <p id="player-symbol">X</p>
+                <button>Submit</button>
             </div>
             <div id="giocatore">
                 <p>Giocatore 1</p>
-                <p id="nome-giocatore">Sergio Armenteros</p>
-                <p id="score"></p>
-                <p>Edit</p>
+                <h2>Sergio Armenteros</h2>
+                <p id="player-symbol">O</p>
+                <button>Submit</button>
             </div>
         </section>
         <button class="btn">Inizia una nuova partita</button>
         <section id="gioco-attivo">
-            <article>
+            <article id="game-over">
                 <h3>Hai vinto <span id="winner"></span>!</h3>
                 <p>Clicca su Inizia una nuova partita, per riniziare.</p>
             </article>
             <p>E' il tuo turno <span id="active-player-name">PLAYER NAME</span>!</p>
-            <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-
-                <li></li>
+            <ol id="game-board">
+                <li class="disabled">X</li>
                 <li></li>
                 <li></li>
 
                 <li></li>
+                <li>O</li>
                 <li></li>
+
+                <li></li>
+                <li>X</li>
                 <li></li>
             </ol>
         </section>
