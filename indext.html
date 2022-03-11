@@ -15,6 +15,17 @@
     </header>
     <body>
         <aside>
+            <h2>Scrivi il tuo nome</h2>
+            <form>
+                <div>
+                    <label for="player-name">Player name</label>
+                    <input type="text" name="player-name" id="player-name">
+                </div>
+                <div>
+                    <button class='btn' type="submit">Conferma</button>
+                    <button class='btn-alt' type="button">Cancella</button>
+                </div>
+            </form>
 
         </aside>
         <section id="tabellone">
@@ -31,8 +42,27 @@
                 <p>Edit</p>
             </div>
         </section>
-        <button>Inizia una nuova partita</button>
-        <section id="gioco-attivo"></section>
+        <button class="btn">Inizia una nuova partita</button>
+        <section id="gioco-attivo">
+            <article>
+                <h3>Hai vinto <span id="winner"></span>!</h3>
+                <p>Clicca su Inizia una nuova partita, per riniziare.</p>
+            </article>
+            <p>E' il tuo turno <span id="active-player-name">PLAYER NAME</span>!</p>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </section>
  
 
     </body>
