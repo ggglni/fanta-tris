@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel='stylesheet'>
     <link href="overlay.css" rel='stylesheet'>
+    <link href="configuration.css" rel='stylesheet'>
     <script src='game.js'></script>
     <title>Fantatris</title>
 </head>
 <body>
+    <div id="backdrop"></div>
     <header>
         <h1>Gioca al Fantatris</h1>
         <h2>Hai perso al fantacalcio? Sfida i tuoi avversari al fantatris</h2>
     </header>
     <body>
-        <aside class="modal">
+        <aside class="modal" id="config-overlay">
             <h2>Scrivi il tuo nome</h2>
             <form>
-                <div>
+                <div class="form-control">
                     <label for="player-name">Player name</label>
                     <input type="text" name="player-name" id="player-name">
                 </div>
