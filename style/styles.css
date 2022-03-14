@@ -57,7 +57,7 @@ header h1{
     text-align: center;
 }
 
-#giocatore {
+.giocatore {
     width: 35%;
     height: 70%;
     margin: 1.5rem;
@@ -67,16 +67,16 @@ header h1{
     background-color: white;
 }
 
-#giocatore h2{
+.giocatore h2{
     font-size: 1.3rem;
 }
 
-#giocatore #player-symbol{
+.giocatore #player-symbol{
     font-size: 1.6rem;
     font-weight: bold;
 }
 
-#giocatore button{
+.giocatore button{
     background-color: white;
     border-radius: 2px;
     border: 1px solid white;
@@ -84,7 +84,7 @@ header h1{
     margin-bottom: 1rem;
 }
 
-#giocatore button:hover{
+.giocatore button:hover{
     background-color: rgb(182, 236, 175);
     border-radius: 2px;
     border: 1px solid rgb(182, 236, 175);
