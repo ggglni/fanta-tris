@@ -1,6 +1,10 @@
+let editedPlayer = 0;
+
+
 const playerConfigOverlayElement = document.getElementById('config-overlay');
 const backdropElement = document.getElementById('backdrop');
 const formElement = document.querySelector('form');
+const errorsOutput = document.getElementById('config-errors');
 
 
 const editPlayer1btn = document.getElementById('edit-player-1');

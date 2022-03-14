@@ -25,8 +25,9 @@
             <form>
                 <div class="form-control">
                     <label for="player-name">Player name</label>
-                    <input type="text" name="player-name" id="player-name">
+                    <input type="text" name="player-name" id="player-name" required>
                 </div>
+                <p id="config-errors"></p>
                 <div>
                     <button class='btn' type="submit" id="confirm-name">Conferma</button>
                     <button class='btn-alt' type="button" id="close-overlay">Cancella</button>
@@ -39,13 +40,13 @@
                 <p>Giocatore 1</p>
                 <h2>Manuel Pucciarelli</h2>
                 <p id="player-symbol">X</p>
-                <button id="edit-player-1">Submit</button>
+                <button id="edit-player-1" data-playerId="1">Submit</button>
             </div>
             <div class='giocatore' id="giocatore-2">
                 <p>Giocatore 1</p>
                 <h2>Sergio Armenteros</h2>
                 <p id="player-symbol">O</p>
-                <button id="edit-player-2">Submit</button>
+                <button id="edit-player-2" data-playerId="2">Submit</button>
             </div>
         </section>
         <button class="btn">Inizia una nuova partita</button>

@@ -10,6 +10,18 @@
     margin: 1rem 0rem;
 }
 
+.error label {
+    border-color: rgb(136,2,2);
+}
+
+.error input{
+    border-color: rgb(136,2,2);
+    color: rgb(136,2,2);
+    background-color: rgb(253,219,219);
+
+
+}
+
 .form-control label {
     display: block;
     margin-bottom: 0.5rem;
