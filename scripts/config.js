@@ -1,8 +1,7 @@
 function openPlayerConfig(event){
+    editedPlayer = +event.target.dataset.playerid;
     playerConfigOverlayElement.style.display = 'block';
     backdropElement.style.display = 'block';
-    const selectedPlayerId = +event.target.dataSet.playerId;
-    editedPlayer = selectedPlayerId;
 }
 
 function closePlayerConfig(){
@@ -10,6 +9,7 @@ function closePlayerConfig(){
     backdropElement.style.display = 'none';
     formElement.firstElementChild.classList.remove('error');
     errorsOutput.textContent = ''; //remove error text
+    formElement.firstElementChild.lastElementChild.value = '';
 }
 
 function savePlayerConfig(event){
@@ -26,5 +26,11 @@ function savePlayerConfig(event){
         return;
     }
 
-    const updatedPlayerData = document.getElementById('giocatore-'+editedPlayer)
+    const updatedPlayerData = document.getElementById('giocatore-'+editedPlayer);
+    updatedPlayerData.children[1].textContent = enteredPlayerName; //access second child of that ID element
+
+    players[editedPlayer - 1].name = enteredPlayerName; // 1-1=0 (first player) or 2-1 = 1 (second player)
+    console.log(players[editedPlayer - 1]);
+    
+    closePlayerConfig(); //to close automatically the overlay
 }
