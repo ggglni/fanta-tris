@@ -1,7 +1,7 @@
 #gioco-attivo{
     text-align: center;
     margin: 2rem 0 5rem 0;
-    /* display: none; */
+    display: none;
 }
 
 #game-over{
@@ -26,15 +26,15 @@
     margin: 1rem 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(3, 8rem); /*6rem 6rem 6rem*/
-    grid-template-rows: repeat(3,8rem); /*6rem 6rem 6rem*/
+    grid-template-columns: repeat(3, 7rem); /*6rem 6rem 6rem*/
+    grid-template-rows: repeat(3,7rem); /*6rem 6rem 6rem*/
     justify-content: center;
 }
 
 #game-board li{
-    border: 2px solid rgb(7, 126, 3);
+    border: 2px solid rgb(243, 243, 243);
     border-radius: 2px;
-    background-color: beige;
+    background-color: rgb(145, 216, 124);
     /* background-image: ; */
     cursor: pointer;
     display: flex;

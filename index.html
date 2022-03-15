@@ -9,8 +9,9 @@
     <link href="style/configuration.css" rel='stylesheet'>
     <link href="style/game.css" rel='stylesheet'>
     <script src='scripts/config.js' defer></script>
-    <script src='scripts/app.js' defer></script>
     <script src='scripts/game.js' defer></script>
+    <script src='scripts/app.js' defer></script>
+
     <title>Fantatris</title>
 </head>
 <body>
@@ -49,7 +50,7 @@
                 <button id="edit-player-2" data-playerid='2'>Submit</button>
             </div>
         </section>
-        <button class="btn">Inizia una nuova partita</button>
+        <button class="btn" id="start-game-btn">Inizia una nuova partita</button>
         <section id="gioco-attivo">
             <article id="game-over">
                 <h3>Hai vinto <span id="winner"></span>!</h3>
@@ -57,16 +58,16 @@
             </article>
             <p>E' il tuo turno <span id="active-player-name">PLAYER NAME</span>!</p>
             <ol id="game-board">
-                <li class="disabled">X</li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li></li>
                 <li></li>
                 <li></li>
 
                 <li></li>
-                <li>O</li>
                 <li></li>
-
-                <li></li>
-                <li>X</li>
                 <li></li>
             </ol>
         </section>
