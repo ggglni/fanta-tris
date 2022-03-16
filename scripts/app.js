@@ -14,7 +14,7 @@ const backdropElement = document.getElementById('backdrop');
 const formElement = document.querySelector('form');
 const errorsOutput = document.getElementById('config-errors');
 const gameArea = document.getElementById('gioco-attivo');
-const activePlayerNameElement = document.get
+const activePlayerNameElement = document.getElementById('active-player-name');
 
 
 const editPlayer1btn = document.getElementById('edit-player-1');
